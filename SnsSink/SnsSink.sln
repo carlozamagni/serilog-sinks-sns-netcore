@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnsSink", "SnsSink.csproj", "{09166F9A-E1CA-41A4-9B19-9DCECA8EA59B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnsSink.Test", "..\SnsSink.Test\SnsSink.Test.csproj", "{B0345F23-5E0F-413E-BBE4-CB4CA7C643BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09166F9A-E1CA-41A4-9B19-9DCECA8EA59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09166F9A-E1CA-41A4-9B19-9DCECA8EA59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09166F9A-E1CA-41A4-9B19-9DCECA8EA59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09166F9A-E1CA-41A4-9B19-9DCECA8EA59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0345F23-5E0F-413E-BBE4-CB4CA7C643BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0345F23-5E0F-413E-BBE4-CB4CA7C643BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0345F23-5E0F-413E-BBE4-CB4CA7C643BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0345F23-5E0F-413E-BBE4-CB4CA7C643BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {628BB4E7-F1E0-413E-BAF9-FC8569F01037}
+	EndGlobalSection
+EndGlobal
