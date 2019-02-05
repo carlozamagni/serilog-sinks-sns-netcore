@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Globalization;
 using System.IO;
-using System.Text;
 using Amazon.Extensions.NETCore.Setup;
-using Amazon.Runtime;
 using Microsoft.Extensions.Configuration;
 using Serilog;
 using Serilog.Events;
@@ -15,7 +12,7 @@ namespace SnsSink.Test
     {
         private const string PrivateConfigFilePostfix = "private";
 
-		private AWSOptions LoadConfiguration()
+        private AWSOptions LoadConfiguration()
         {
             IConfiguration config = new ConfigurationBuilder()
                 .SetBasePath($"{Directory.GetCurrentDirectory()}/Configuration")
@@ -32,10 +29,10 @@ namespace SnsSink.Test
             var config = LoadConfiguration();
             var log = new LoggerConfiguration()
                 .MinimumLevel.Information()
-                .WriteTo.SnsSink(config, "", LogEventLevel.Verbose)
+                .WriteTo.SnsSink(config, "", LogEventLevel.Verbose, CultureInfo.InvariantCulture)
                 .CreateLogger();
 
             Assert.NotNull(log);
         }
-	}
+    }
 }
